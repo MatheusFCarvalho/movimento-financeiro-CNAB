@@ -2,7 +2,7 @@ from django.shortcuts import render
 from rest_framework.views import APIView, Response
 from rest_framework.parsers import FileUploadParser
 from .models import Cnab
-from .serializers import CnabSerializer
+from .serializers import CnabSerializer, FilesSerializer
 from .arrays import type_transactions_data, negative_transactions
 # Create your views here.
 import ipdb
@@ -11,7 +11,7 @@ import ipdb
 class UploadView(APIView):
     parser_classes = [FileUploadParser]
     queryset = Cnab
-    serializer_class = CnabSerializer
+    serializer_class = FilesSerializer
 
     def post(self, request, filename):
         data = []

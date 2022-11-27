@@ -15,3 +15,10 @@ class CnabSerializer(serializers.ModelSerializer):
     class Meta:
         model = Cnab
         fields = "__all__"
+
+
+class FilesSerializer(serializers.Serializer):
+    file = serializers.FileField()
+
+    class Meta:
+        fields = ["file"]
