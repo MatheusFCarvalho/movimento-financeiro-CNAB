@@ -44,8 +44,6 @@ class ListView(APIView):
     serializer_class = CnabSerializer
 
     def get(self, request, name_company):
-        import ipdb
-        ipdb.set_trace()
         company_transactions = Cnab.objects.filter(
             name_company__icontains=name_company)
 
