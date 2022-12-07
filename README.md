@@ -25,7 +25,7 @@ Aplicação back-end, com o intuito de parsear arquivo CNAB txt salvando as info
 6. Inicialize a aplicação com o comando 'python manage.py runserver'
   - Para interromper, pressione 'Ctrl+c'
 
-7. A documentação está em 'http://localhost:8000/api/swagger-ui/'
+7. A documentação está em 'http://localhost:8000/schema/swagger-ui/'
 
 8. Testando/Utilizando a aplicação localmente
   *Método POST:
@@ -33,7 +33,9 @@ Aplicação back-end, com o intuito de parsear arquivo CNAB txt salvando as info
     - Envie um `Binary File` no formato txt
 
   *Método GET:
-    - Utilize a rota `http://localhost:8000/api/relatorio/<NOME DA LOJA>/`
+    - Utilize a rota `http://localhost:8000/api/report/<NOME DA LOJA>/`
+    
+    Obs: pode ser que a
     
     
 Esta aplicação não possui testes.
