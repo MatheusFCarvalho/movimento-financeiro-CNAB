@@ -30,12 +30,10 @@ Aplicação back-end, com o intuito de parsear arquivo CNAB txt salvando as info
 8. Testando/Utilizando a aplicação localmente
   *Método POST:
     -Utilize a rota `http://localhost:8000/api/parser/cnab/`
-    - Envie um `Binary File` no formato txt
+    - Envie um `Binary File` no formato txt (existe um cnab file na raiz do arquivo)
 
   *Método GET:
     - Utilize a rota `http://localhost:8000/api/report/<NOME DA LOJA>/`
-    
-    Obs: pode ser que a
     
     
 Esta aplicação não possui testes.
